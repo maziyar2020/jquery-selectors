@@ -128,6 +128,42 @@ $(document).ready(function () {
     });
 
     $("#Button_33").click(function () { 
-        $("#NextSiblings ~").fadeOut(500);
+        $("#NextSiblings ~p").fadeOut(500);
+    });
+    
+    // $("#Button_34").click(function () { 
+    //     $("#NotSelector input:not(:checked)").fadeOut(500);
+    // });
+
+    $("#Button_34").click(function () { 
+        $("input:not(:checked) , input:not(:checked) + span").fadeOut(500);
+    });
+    
+    $("#Button_35").click(function () { 
+        $("#nth_Child ul li:nth-child(2)").fadeOut(500);
+    });
+
+    $("#Button_36").click(function () { 
+        $("#nth_Last_Child div ul li:nth-last-child(2)").fadeOut(500);
+    });
+
+    $("#Button_37").click(function () { 
+        $("#nth_Of_Type div p:nth-of-type(2)").fadeOut(500);
+    });
+
+    $("#Button_38").click(function () { 
+        $("#nth_Last_Of_Type div p:nth-last-of-type(2)").fadeOut(500);
+    });
+
+    $("#Button_39").click(function () { 
+        $("#Only_Child div ul li:only-child").fadeOut(500);
+    });
+
+    $("#Button_40").click(function () { 
+        $("#Only_Of_Type div b:only-of-type").fadeOut(500);
+    });
+
+    $("#Button_41").click(function () { 
+        $("#Parent_Selector td:parent").fadeOut(500);
     });
 });
