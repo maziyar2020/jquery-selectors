@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Selectors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="asset/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="asset/css/bootstrap-rtl.min.css" />
+    <script src="asset/js/jquery-3.3.1.min.js"></script>
+    <script src="asset/js/jq.js"></script>
+</head>
+
+<body>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+
+                <div class="well" id="IdSelector">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_1">
+                            Id Selector
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+
+                <div class="well test">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_2">
+                            Class Selector
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_3">
+                            All Selector
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="well" TestName="TestValue Hello">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_4">
+                            Attribute Contains Selector
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="well" WordName="WordValue Test">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_5">
+                            Attribute Contains Word Selector
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="well" EndWith="Hello Mohammad">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_6">
+                            Attribute Ends With Selector
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="well" Equal="Hello">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_7">
+                            Attribute Equal Selector
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="well" StartWith="Hello Mohammad">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_8">
+                            Attribute Start With Selector
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_9">
+                            Button Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9">
+                        <input type="button" value="input button">
+
+                        <button> button </button>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_10">
+                            checkbox Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9">
+                        <input type="checkbox">checkbox
+
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_11">
+                            Parent > Child Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9" id="Parent">
+                        <p class="test">1</p>
+                        <p>2</p>
+                        <p class="test">3</p>
+                        <p>4</p>
+                        <p class="test">5</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_12">
+                            Contains Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9" id="Contains">
+                        test
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_13">
+                            Descendant Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9" id="descendantId">
+                        <p>1</p>
+                        <p>2</p>
+                        <div>
+                            <p>test</p>
+                        </div>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_14">
+                            disabled Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9">
+                        <input type="button" disabled value="disabled">
+                        <input type="button" value="notdisabled">
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_15">
+                            enabled Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9">
+                        <input type="button" value="enabled">
+                        <input type="button" disabled value="notenabled">
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_16">
+                            empty Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9 alert alert-warning"></div>
+
+                    <div class="clearfix"></div>
+                </div>
+
+
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_17">
+                            eq() => index Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9" id="indexSelector">
+                        <p>0</p>
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+
+
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_18">
+                            even Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9" id="evenSelector">
+                        <p>0</p>
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_19">
+                            file Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9" id="fileSelector">
+                        <input type="file" value="file Selector">
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_20">
+                            filrt-child Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9" id="childSelector">
+                        <p>0</p>
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+
+
+                <div class="well" id="firstTypeSelector">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_21">
+                            first-Type Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9">
+                        <p>0</p>
+                        <p>1</p>
+                        <p>2</p>
+
+                        <p>3</p>
+                        <p>4</p>
+                    </div>
+                    <div class="col-md-9">
+                        <p>0</p>
+                        <p>1</p>
+                        <p>2</p>
+
+                        <p>3</p>
+                        <p>4</p>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+
+
+                <div class="well" id="firstSelector">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_22">
+                            first Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9">
+                        <p>0</p>
+                        <p>1</p>
+                        <p>2</p>
+
+                        <p>3</p>
+                        <p>4</p>
+                    </div>
+                    <div class="col-md-9">
+                        <p>0</p>
+                        <p>1</p>
+                        <p>2</p>
+
+                        <p>3</p>
+                        <p>4</p>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="well" id="greaterthanSelector">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_23">
+                            greater than Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9">
+                        <p>0</p>
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+ 
+
+
+
+
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_24">
+                            Has Attribute Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="alert alert-warning" HasAttribute="HasAttribute">test</div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+
+
+
+
+
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_25">
+                            :has() Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="hasClass">
+                            <p>
+                                Hello in a paragraph
+                            </p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+
+
+
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_26">
+                            last child Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9" id="LastChild">
+                        <p>0</p>
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+
+
+
+
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_27">
+                            last of type Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9" id="LastOfType">
+                        <div>
+                            <p>0</p>
+                            <p>1</p>
+                            <p>2</p>
+                            <p>3</p>
+                            <p>4</p>
+                        </div>
+                        <div>
+                            <p>0</p>
+                            <p>1</p>
+                            <p>2</p>
+                            <p>3</p>
+                            <p>4</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+
+
+
+
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_28">
+                            last Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9" id="LastSelector">
+                        <div>
+                            <p>0</p>
+                            <p>1</p>
+                            <p>2</p>
+                            <p>3</p>
+                            <p>4</p>
+                        </div>
+                        <div>
+                            <p>0</p>
+                            <p>1</p>
+                            <p>2</p>
+                            <p>3</p>
+                            <p>4</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+
+
+
+
+
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_29">
+                            :ls() => Less Than Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9" id="LessThan">
+                        <p>0</p>
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                        <p>6</p>
+                        <p>7</p>
+                        <p>8</p>
+                        <p>9</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+
+
+
+
+
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_30">
+                            multiple Attribute Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="MultipleAttribute" multipleAttribute="Test">
+                            <p>
+                                Hello in a paragraph
+                            </p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+
+
+
+
+
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_31">
+                            multiple Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="MultipleSelector">
+                            division with class
+                        </div>
+
+                        <p id="MultipleSelector">
+                            paragraph with id
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+
+
+
+
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_32">
+                            next adjacent Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9">
+                        <div id="NextAdjacent">
+                            main selector
+                        </div>
+                        <div>
+                            division with class
+                        </div>
+                        <p>
+                            paragraph with id
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+
+
+
+
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_33">
+                            next siblings Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9">
+                        <div id="NextSiblings"></div>
+                        <div>
+                            division with class
+                        </div>
+                        <p>
+                            paragraph with id
+                        </p>
+                        <p>
+                            paragraph with id
+                        </p>
+                        <p>
+                            paragraph with id
+                        </p>
+                        <p>
+                            paragraph with id
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+
+
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_34">
+                            :not() Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9">
+                        <div id="NotSelector">
+                            <div>
+                                <input type="checkbox" name="a">
+                                <span>ایمان</span>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="b">
+                                <span>محمد</span>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="c" checked="checked">
+                                <span>سهیل</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+
+
+
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_35">
+                            :nth-child() Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9">
+                        <div id="nth_Child">
+                            <div>
+                                <ul>
+                                    <li>محمد</li>
+                                    <li>میلاد</li>
+                                    <li>علی</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>سبحان</li>
+                                    <li>مرتضی</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>الناز</li>
+                                    <li>سارا</li>
+                                    <li>سمیه</li>
+                                    <li>فائزه</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+
+
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_36">
+                            :nth-last-child() Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9">
+                        <div id="nth_Last_Child">
+                            <div>
+                                <ul>
+                                    <li>محمد</li>
+                                    <li>میلاد</li>
+                                    <li>علی</li>
+                                    <li>رضا</li>
+                                    <li>عباس</li>
+                                    <li>سمیرا</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>سبحان</li>
+                                    <li>مرتضی</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>الناز</li>
+                                    <li>سارا</li>
+                                    <li>سمیه</li>
+                                    <li>فائزه</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+
+
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_37">
+                            :nth-of-type() Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9">
+                        <div id="nth_Of_Type">
+                            <div>
+                                <p>paragraph</p>
+                                <span>test</span>
+                                <p>paragraph</p>
+                                <b>bold</b>
+                                <span>span</span>
+                            </div>
+                            <hr>
+                            <div>
+                                <p>paragraph</p>
+                                <span>test</span>
+                                <p>paragraph</p>
+                                <b>bold</b>
+                                <span>span</span>
+                            </div>
+                            <hr>
+                            <div>
+                                <p>paragraph</p>
+                                <span>test</span>
+                                <p>paragraph</p>
+                                <b>bold</b>
+                                <span>span</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_38">
+                            :nth-last-of-type() Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9">
+                        <div id="nth_Last_Of_Type">
+                            <div>
+                                <p>paragraph</p>
+                                <span>test</span>
+                                <p>paragraph</p>
+                                <b>bold</b>
+                                <span>span</span>
+                            </div>
+                            <hr>
+                            <div>
+                                <p>paragraph</p>
+                                <span>test</span>
+                                <p>paragraph</p>
+                                <b>bold</b>
+                                <span>span</span>
+                            </div>
+                            <hr>
+                            <div>
+                                <p>paragraph</p>
+                                <span>test</span>
+                                <p>paragraph</p>
+                                <b>bold</b>
+                                <span>span</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_39">
+                            :only-child Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9">
+                        <div id="Only_Child">
+                            <div>
+                                <ul>
+                                    <li>محمد</li>
+                                    <li>میلاد</li>
+                                    <li>علی</li>
+                                </ul>
+                            </div>
+                            <hr>
+                            <div>
+                                <ul>
+                                    <li>سبحان</li>
+                                </ul>
+                            </div>
+                            <hr>
+                            <div>
+                                <ul>
+                                    <li>سبحان</li>
+                                </ul>
+                            </div>
+                            <hr>
+                            <div>
+                                <ul>
+                                    <li>سبحان</li>
+                                    <li>مرتضی</li>
+                                </ul>
+                            </div>
+                            <hr>
+                            <div>
+                                <ul>
+                                    <li>الناز</li>
+                                    <li>سارا</li>
+                                    <li>سمیه</li>
+                                    <li>فائزه</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_40">
+                            :only-of-type Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9">
+                        <div id="Only_Of_Type">
+                            <div>
+                                <p>paragraph</p>
+                                <span>test</span>
+                                <p>paragraph</p>
+                                <b>bold</b>
+                                <b>bold 2</b>
+                                <span>span</span>
+                            </div>
+                            <hr>
+                            <div>
+                                <p>paragraph</p>
+                                <span>test</span>
+                                <p>paragraph</p>
+                                <b>bold</b>
+                                <span>span</span>
+                            </div>
+                            <hr>
+                            <div>
+                                <p>paragraph</p>
+                                <span>test</span>
+                                <p>paragraph</p>
+                                <b>bold</b>
+                                <span>span</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+
+                <style>
+                    td {
+                        width: 40px;
+                        height: 40px;
+                        background: green;
+                    }
+                </style>
+
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_41">
+                            :parent Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9">
+                        <div id="Parent_Selector">
+                            <table border="1">
+                                <tr>
+                                    <td>mohammad</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Ali</td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
